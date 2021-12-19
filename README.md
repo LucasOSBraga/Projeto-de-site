@@ -5,9 +5,9 @@ Apenas um estudo pra fixação e aprendizagem.
 
 O controle de tarefas desse projeto será realizado no Github
 
-##icones
+## Icones
 
 :package: Nova funcionalidade
 :up: Atualização
-:beatle: Correção de bug
+:up: Correção de bug
 :checkered_flag: Release
