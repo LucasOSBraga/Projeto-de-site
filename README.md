@@ -11,3 +11,7 @@ O controle de tarefas desse projeto será realizado no Github
 :up: Atualização
 :up: Correção de bug
 :checkered_flag: Release
+
+## Concluídos
+
+Criação do menu sidebar
