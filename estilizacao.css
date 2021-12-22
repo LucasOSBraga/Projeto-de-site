@@ -224,3 +224,93 @@ header{
         background-color: #a044ff;
 
 }
+
+/*O grid-template-columns, é para fazer as colunas e o grid-template-rows, é para fazer as linhas*/
+.conhecimentos{
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(6, 7rem);
+        row-gap: .5rem;
+}
+
+.conhecimento:nth-child(1){
+        grid-column: 3 / 6;
+        grid-row: 1/ 2;
+}
+
+.conhecimento:nth-child(2){
+        grid-column: 2 / 5;
+        grid-row: 3 / 6;
+}
+
+.conhecimento:nth-child(3){
+        grid-column: 3 / 6;
+        grid-row: 5 / -1;
+}
+
+
+.conhecimento:nth-child(4){
+        grid-column: 12 / 15;
+        grid-row: 1 / 2;
+}
+
+.conhecimento:nth-child(5){
+        grid-column: 13 / 16;
+        grid-row: 3 / 7;
+}
+
+
+.conhecimento:nth-child(6){
+        grid-column: 12 / 15;
+        grid-row: 5 / -1;
+}
+.sessao-conhecimentos{
+        background-color: #f5f5f5;
+}
+
+.sessao-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
+.sessao-header h1{
+        font-family: var(--font-primary);
+        font-size: 3rem;
+        color: #4b4b4b;
+        border-bottom: #a044ff solid 3px;
+        margin-bottom: 1.5rem;
+}
+
+.conhecimento-header{
+        display: flex;
+        align-items: center;
+        color: #4b4b4b;
+}
+
+.conhecimento-header i{
+        font-size: 2.5rem;
+}
+.conhecimento-header h3{
+        font-family: var(--font-secundary);
+        font-size: 2rem;
+        padding-left: 1rem;
+}
+
+.conhecimento-text{
+        font-family: var(--font-secundary);
+        margin-top: 1rem;
+}
+
+.conhecimento-img-wrapper{
+        grid-column: 7 / 11;
+        grid-row: 2 / 6;
+        width: 100%;
+}
+
+.conhecimento-img-wrapper img{
+        object-fit: cover;
+        width: 100%;
+        border-radius: 50%;
+}
