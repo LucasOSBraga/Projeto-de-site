@@ -16,3 +16,4 @@ O controle de tarefas desse projeto será realizado no Github
 
 Criação do menu sidebar;
 Criação da Área de Conhecimentos;
+Criação da Área Projetos:
