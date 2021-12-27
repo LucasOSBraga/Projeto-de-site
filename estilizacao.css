@@ -9,7 +9,20 @@
         list-style: none;
         text-decoration: none;
  }
-
+/*classes auxiliares*/
+ .btn{
+        background: #6a3093; 
+        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  
+        background: linear-gradient(to left, #a044ff, #6a3093);
+        font-family: var(--font-action);
+        font-size: .5rem;
+        color: #eee;
+        border-radius: .5rem;
+        border: none;
+        /*para criar uma sombra na "box"*/
+        box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+ }
  :root{
          --font-primary: "Baloo Da 2", serif;
          --font-secundary: "Josefin Slab", serif;
@@ -232,7 +245,7 @@ header{
         grid-template-rows: repeat(6, 7rem);
         row-gap: .5rem;
 }
-
+ /*quadro de posição: inicio*/
 .conhecimento:nth-child(1){
         grid-column: 3 / 6;
         grid-row: 1/ 2;
@@ -259,11 +272,11 @@ header{
         grid-row: 3 / 7;
 }
 
-
 .conhecimento:nth-child(6){
         grid-column: 12 / 15;
         grid-row: 5 / -1;
 }
+/*quadro de posição: final*/
 .sessao-conhecimentos{
         background-color: #f5f5f5;
 }
@@ -310,6 +323,7 @@ header{
 }
 
 .conhecimento-img-wrapper img{
+        /*especifica como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida pela altura e largura usadas:*/
         object-fit: cover;
         width: 100%;
         border-radius: 50%;
@@ -346,13 +360,13 @@ header{
         opacity: .5;
 }
 
-
 .card-info{
         position: absolute;
         bottom: 0;
         opacity: 0;
         visibility: hidden;
         padding: 2rem;
+        /*acrescenta sombras ao texto:*/
         text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
         transition: all .3s;
 }
@@ -382,22 +396,114 @@ header{
 .card-info button{
         width: 8rem;
         height: 2.5rem;
-        background: #6a3093; 
-        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  
-        background: linear-gradient(to left, #a044ff, #6a3093);
-        font-family: var(--font-action);
-        font-size: .5rem;
-        color: #eee;
-        border-radius: .5rem;
-        border: none;
-        box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
-        cursor: pointer;
 }
 
 .card:hover .card-info{
         bottom: 2rem;
         opacity: 1;
+        /*visibilidade dos elementos:*/
         visibility: visible;
 }
 
+.sessao-contato{
+        width: 100%;
+        height: hv;
+        background-color: #4e4c4c;
+        display: flex;
+        align-items: center;
+        /*é empregada para alinhar os elementos ao longo do eixo principal:*/
+        justify-content: center;
+}
 
+.contato-wrapper{
+        width: 60%;
+        height: 30rem;
+        display: flex;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+}
+
+.contato-left{
+        width: 35%;
+        background:
+        linear-gradient(rgba(15,15,15, 0.6),rgba(22,22,22, 0.9)),
+        url(imagem/cont01.jpg);
+        background-size: cover;
+}
+
+.contato-right{
+        width: 55%;
+        background-color: #eee;
+        padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1{
+        width: 100%;
+        /*para posicionar os texto:*/
+        text-align: center;
+        font-family: var(--font-primary);
+        color: #272727;
+        font-size: 3rem;
+        font-weight: lighter;
+}
+.sessao-contato form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /*para posicionar os itens*/
+        align-items: center;
+}
+
+.input-group{
+        position: relative;
+}
+
+.field{
+        background-color: transparent;
+        border: none;
+        width: 20rem;
+        font-size: 1.5rem;
+        font-family: var(--font-secundary);
+        border-bottom: 1.5px dashed #636363;
+        height: 3rem;
+        /*para tirar as bordas na seleção:*/
+        outline: none;
+        margin:1rem 0;
+}
+
+.input-group textarea{
+        padding-top: 1rem;
+        max-width: 20rem;
+        max-height: 3;
+}
+
+.field-label{
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        /*font-size: para alterar o tamanho das letras:*/
+        font-size: 1.2rem;
+        font-family: var(--font-secundary);
+        /*para mudar se vai ser toda maiúscula ou não:*/
+        text-transform: uppercase;
+        transition: .3s;
+}
+
+/*:focus: é aplicada quando um elemento recebe foco:*/
+.field:focus ~ label{
+        top: 0;
+        font-size: 1rem;
+
+}
+.field:focus {
+        border-bottom: solid 1px;
+}
+
+.btn-submit{
+        width: 100%;
+        height: 2rem;
+        font-size: 1rem;
+        /*Pode ser usado para fazer o texto aparecer todo em maiúsculas ou minúsculas, ou com cada palavra em maiúscula.*/
+        text-transform: uppercase;
+        margin-top: 1rem;
+
+}

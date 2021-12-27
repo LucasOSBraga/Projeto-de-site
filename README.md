@@ -14,6 +14,7 @@ O controle de tarefas desse projeto será realizado no Github
 
 ## Concluídos
 
-Criação do menu sidebar;
-Criação da Área de Conhecimentos;
-Criação da Área Projetos:
+:checkered_flag: Criação do menu sidebar;
+:checkered_flag: Criação da Área de Conhecimentos;
+:checkered_flag: Criação da Área Projetos;
+:checkered_flag: Criação da área de contatos;

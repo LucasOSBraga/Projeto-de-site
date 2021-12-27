@@ -25,7 +25,9 @@
                 <img src="imagem/img01.jpg" alt="">
             </div><!--img-vrapper-->
             <div class="banner">
-                <h1>Web Developer & Front End Designer</h1>
+                <h1><a style=" font-family: var(--font-primary);
+                    text-decoration: none;
+                    color: #fff;" href="index.projeto.html">Web Developer & Front End Designer</a></h1>
                 <p>Lucas O S Braga</p>
                 <button>Saiba mais</button>
                 
@@ -126,7 +128,7 @@
                             <h2>ToDo List</h2>
                             <h3>JavaScript</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button>Saiba Mais</button>
+                            <button class="btn">Saiba Mais</button>
                         </div><!--card-info-->
                     </div><!--card01-->
                     <div class="card">
@@ -137,7 +139,7 @@
                             <h2>Maratona</h2>
                             <h3>HTML & CSS</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            <button>Saiba Mais</button>
+                            <button class="btn">Saiba Mais</button>
                         </div><!--card-info-->
                     </div><!--card01-->
                     <div class="card">
@@ -149,11 +151,36 @@
                             <h3>HTML</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
-                            <button>Saiba Mais</button>
+                            <button class="btn">Saiba Mais</button>
                         </div><!--card-info-->
                     </div><!--card03-->
                 </div><!--projetos-->
         </section><!--sessao-projetos-->
+
+        <section class="sessao-contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div><!--contato-right-->
+
+            </div><!--contato-wrapper-->
+        </section><!--sessao-contato-->
     
     </div><!--Container-->
 </body>
