@@ -505,5 +505,118 @@ header{
         /*Pode ser usado para fazer o texto aparecer todo em maiúsculas ou minúsculas, ou com cada palavra em maiúscula.*/
         text-transform: uppercase;
         margin-top: 1rem;
+}
+
+.sessao-orcamento{
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-image: url('https://blog.lexos.com.br/wp-content/uploads/2018/02/modelos-de-or%C3%A7amento-para-o-com%C3%A9rcio-e1519663936851-1280x720.jpg');
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.orcamento-wrapper{
+        width: 60%;
+        height: 80%;
+        background-color: #ffffff99;
+        border-radius: 10px;
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+        position: relative;
+}
+
+.sessao-orcamento h1{
+        position: absolute;
+        top: -2.5rem;
+        left: 2rem;
+        background: #6a3093; 
+        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  
+        background: linear-gradient(to left, #a044ff, #6a3093);
+        padding: 0 3rem;
+        color: #ffff;
+        font-family:var(--font-primary);
+        font-size: 3rem;
+        font-weight: lighter;
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+}
+
+.sessao-orcamento form{
+        margin: 4rem;
+        /*O display:grid é pra iniciar a criação de colunas e linhas*/
+        display: grid;
+        grid-template-columns: auto 1fr;
+        /*O column-gap é pra criar espaço entre as colunas*/
+        column-gap: 2rem;
+        /*O row-gap é pra criar espaço entra as linhas*/
+        row-gap: 2rem;
+}
+
+.sessao-orcamento label{
+        font-family: var(--font-secundary);
+        font-size: 1.5rem;
+        font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"]{
+        font-family: var(--font-secundary);
+        max-width: 4rem;
+        font-size: 2rem;
+        outline: none;
+        border-radius: 10px;
+        /*O border: none serve pra tirar a borda do input*/
+        border: none;
+        padding: 0.3rem;
+}
+
+.btn-orcamento{
+        text-transform: uppercase;
+        padding: 1rem;
+        cursor: pointer;
+        grid-column: 2;
+}
+
+
+
+
+
+
+/*==================Responssívos=================*/
+
+@media screen and (max-width: 768px){
+        .sessao-contato, .contato-wrapper, .sessao-projetos, .sessao-header, .section-conhecimentos{padding-top: 10%;width: auto;}
+
+        .card-img-wrapper{width: auto; height: 350px;}
+
+        .section-conhecimentos h3{font-size: 1.5rem;}
+
+        .section-conhecimentos a{font-size: 1rem;}
+
+        .conhecimentos i{ padding-top: 10% ;}
+
+        .banner a{ font-size: 2.5rem;}
+
+        .img-wrapper{width: 100vh;height: 60vh;overflow: hidden;background-color: rgba(0, 0, 0, 0.9);}
+        .conhecimento-text{font-size: 15px; display: block;}
+        .conhecimento i{font-size: 23px;}
+        .conhecimentos{display: grid;grid-template-columns: repeat(-1, 1fr);grid-template-rows: repeat(6, 7rem);row-gap: .5rem;}
+        .conhecimento:nth-child(1){grid-column: 2 / 9;grid-row: 1 / 6;}
+
+        .conhecimento:nth-child(2){grid-column: 2 / 9;grid-row: 3 / 6;}
+
+        .conhecimento:nth-child(3){grid-column: 2 / 9;grid-row: 5 / 6;}
+
+        .conhecimento:nth-child(4){grid-column: 9 / 16;grid-row:  1 / 6;}
+
+        .conhecimento:nth-child(5){grid-column: 9 / 16;grid-row: 3 / 6;}
+
+        .conhecimento:nth-child(6){grid-column: 9 / 16;grid-row: 5 / 6;}
+
+        div.conhecimento-img-wrapper img{opacity: 0.0;}
+
+        .sessao-header h1{padding-top: -500px;float: top; display: inline-;}
+
 
 }

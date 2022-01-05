@@ -31,7 +31,7 @@
                 <p>Lucas O S Braga</p>
                 <button>Saiba mais</button>
                 
-            </div><!--banner-->>
+            </div><!--banner-->
         </header>
     <!--====Área do menu: inicio====-->
         <aside class="sidebar">
@@ -157,7 +157,7 @@
                 </div><!--projetos-->
         </section><!--sessao-projetos-->
 
-        <section class="sessao-contato">
+        <section style="padding-top: 2%;" class="sessao-contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -182,7 +182,34 @@
             </div><!--contato-wrapper-->
         </section><!--sessao-contato-->
     
-    </div><!--Container-->
+        
+        <section class="sessao-orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="Quantidade">Quantidade de páginas</label>
+                    <input type="number">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div><!--Preciso de um layout-->
+                            <input type="radio" min="1" name="layout" id="layout-sim">
+                            <label for="latout-sim">Preciso de um layout</label>
+                        </div>
+                        <div><!--Já tenho um layout-->
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="latout-nao">Já tenho um layout</label>
+                        </div>
+                    </div><!--group-layout-->
+
+                    <label for="praso">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div><!--orcamento-wrapper-->
+        </section><!--sessao-orcamento-->
+    </div><!--Container, aqui sempre junto do body-->
 </body>
 
 <script src="script.js"></script>
