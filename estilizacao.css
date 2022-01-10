@@ -29,11 +29,15 @@
          --font-action: "Muli", serif;
  }
 
+ html{
+         scroll-behavior: smooth;
+ }
+
  .hamburguer{
          width: 2rem;
          height: 2rem;
          position: fixed;
-         z-index: 100;
+         z-index: 151;
          right: 2rem;
          top: 2rem;
          display: flex;
@@ -180,6 +184,7 @@ header{
         top: 0;
         right: -20rem;
         transition: all 1s;
+        z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -199,7 +204,7 @@ header{
         
 }
 
-.menu-link{
+.menu-item{
         text-align: center;
         color: #555;
         cursor: pointer;
@@ -208,7 +213,7 @@ header{
         transition: color 1s;
 }
 
-.menu-link:hover{
+.menu-item:hover{
         color: #6a3093;
 }
 
@@ -406,8 +411,9 @@ header{
 }
 
 .sessao-contato{
+        margin-top: 20px;
         width: 100%;
-        height: hv;
+        height: 100vh;
         background-color: #4e4c4c;
         display: flex;
         align-items: center;
@@ -508,10 +514,10 @@ header{
 }
 
 .sessao-orcamento{
-        width: 100%;
+        width: 100wh;
         height: 100vh;
         background-repeat: no-repeat;
-        background-image: url('https://blog.lexos.com.br/wp-content/uploads/2018/02/modelos-de-or%C3%A7amento-para-o-com%C3%A9rcio-e1519663936851-1280x720.jpg');
+        background-image: url('https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg');
         object-fit: cover;
         display: flex;
         justify-content: center;
@@ -578,17 +584,76 @@ header{
         grid-column: 2;
 }
 
+.footer{
+        width: 100%;
+        height: 3rem;
+        background-color: #17181b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.footer-content{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+}
 
+.footer-content p{
+        font-family: var(--font-secundary);
+        color: #f0e9e9;
+        font-size: 1.5rem;
+}
 
+.social-list a{
+        margin: 0 2rem;
+        color:#a7a7a7;
+        font-size: 1.3rem;
+}
+.social-list ul{
+        display: flex;
+}
 
+#link-top{
+        position: fixed;
+        right: 3rem;
+        bottom: 3rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        background: #6a3093; 
+        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  
+        background: linear-gradient(to left, #a044ff, #6a3093);
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.9);
+}
 
 
 /*==================Responssívos=================*/
 
+
 @media screen and (max-width: 768px){
-        .sessao-contato, .contato-wrapper, .sessao-projetos, .sessao-header, .section-conhecimentos{padding-top: 10%;width: auto;}
+        
+        body{border: solid black 1px;
+        }
+        
+        section .section-conhecimentos img{display: none; position: relative;}
+
+        div .projetos{width: 100%;padding-left: 25%;position: center;align-items: center;justify-content: center;display: block;}
+
+        .sessao-contato, .contato-wrapper, .sessao-header{padding-top: 10%;width: auto; margin: auto;}
 
         .card-img-wrapper{width: auto; height: 350px;}
+
+        .section-conhecimentos{
+                margin: 2%;
+                padding: 2%;
+                border: black 1px solid;
+                width: 80vw;}
 
         .section-conhecimentos h3{font-size: 1.5rem;}
 
@@ -599,9 +664,13 @@ header{
         .banner a{ font-size: 2.5rem;}
 
         .img-wrapper{width: 100vh;height: 60vh;overflow: hidden;background-color: rgba(0, 0, 0, 0.9);}
+
         .conhecimento-text{font-size: 15px; display: block;}
+
         .conhecimento i{font-size: 23px;}
+
         .conhecimentos{display: grid;grid-template-columns: repeat(-1, 1fr);grid-template-rows: repeat(6, 7rem);row-gap: .5rem;}
+
         .conhecimento:nth-child(1){grid-column: 2 / 9;grid-row: 1 / 6;}
 
         .conhecimento:nth-child(2){grid-column: 2 / 9;grid-row: 3 / 6;}
@@ -616,7 +685,32 @@ header{
 
         div.conhecimento-img-wrapper img{opacity: 0.0;}
 
-        .sessao-header h1{padding-top: -500px;float: top; display: inline-;}
+        .sessao-header h1{padding-top: -500px;float: top; display: inline;}
+
+        .sessao-header{
+                display: block;
+                align-items: center;
+                justify-content: center;
+        }
+
+        .conhecimentos{
+                border: 1px solid black;
+                display: inline;
+                padding-right: 10px;
+                width: 50%;
+        }
+
+        .line{
+                width: 50%;
+                height: .1rem;
+                background-color: #fff;
+                box-shadow: 0.1rem 0.1rem 1px #000;
+                transition: transform 1s;
+        }
+        .section-conhecimentos img{
+                background-image: none;
+        }
+
 
 
 }

@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family = Abril + Fatface & family = Baloo + Da + 2: wght @ 400; 500; 600; 800 & family = Caveat & family = Dança + Script & family = Fruktur & family = Josefin + Laje: ital, wght @ 0,200; 0,600; 1,200; 1.300; 1.400; 1.600; 1.700 & family = Mochiy + Pop + One & family = Mulish: ital, wght @ 0,300; 0,400; 0,500; 0,700; 0,900; 1.200; 1.400; 1.500 & display = trocar');
+        /*====fontes dessa linha pra cima====*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+        /*====Icones dessa linha pra cima====*/
+        

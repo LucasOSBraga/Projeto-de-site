@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;maximun-scale=1.0">
     <link rel="stylesheet" href="estilizacao.css">
+    <link rel="stylesheet" href="resposividade.css">
     <link rel="apple-touch-icon" sizes="180x180" href="icone-logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icone-logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icone-logo/favicon-16x16.png">
@@ -20,7 +21,7 @@
             <div class="line" id="line3"></div>
             <span>fechar</span>
         </div><!--hamburguer-->
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="imagem/img01.jpg" alt="">
             </div><!--img-vrapper-->
@@ -37,11 +38,11 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-link"><a href="" class="menu-item"></a>Home</li>
-                    <li class="menu-link"><a href="" class="menu-item"></a>Conhecimento</li>
-                    <li class="menu-link"><a href="" class="menu-item"></a>Projetos</li>
-                    <li class="menu-link"><a href="" class="menu-item"></a>Contatos</li>
-                    <li class="menu-link"><a href="" class="menu-item"></a>Orgamento</li>
+                    <li class="menu-item"><a href="#" class="menu-item">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-item">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-item">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-item">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-item">Orgamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -51,7 +52,7 @@
             </div><!--social-media-->
         </aside><!--sidebar-->
     <!--====Área do menu:final====-->
-        <section class="section-conhecimentos">
+        <section class="section-conhecimentos" id="conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -115,7 +116,7 @@
         </section> <!--section-conhecimentos-->
 
         <!--==================Área Projetos: inicio==================-->
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div><!--sessa-header-->
@@ -157,7 +158,7 @@
                 </div><!--projetos-->
         </section><!--sessao-projetos-->
 
-        <section style="padding-top: 2%;" class="sessao-contato">
+        <section style="padding-top: 2%;" class="sessao-contato" id="contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -183,7 +184,7 @@
         </section><!--sessao-contato-->
     
         
-        <section class="sessao-orcamento">
+        <section class="sessao-orcamento" id="orcamento">
             <div class="orcamento-wrapper">
                 <h1>Faça um orçamento</h1>
                 <form>
@@ -209,6 +210,21 @@
                 </form>
             </div><!--orcamento-wrapper-->
         </section><!--sessao-orcamento-->
+        <footer>
+            <div class="footer content">
+                <p>Copyright &copy: 2022, ETECIA DS - Todos os direitos reservados</p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div><!--Container, aqui sempre junto do body-->
 </body>
 
