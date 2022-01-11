@@ -32,4 +32,6 @@ Criação do menu sidebar;
 
 :checkered_flag: Criação da Área de Orçamentos;
 
-:checkered_flag: Criação do rodape.
+:checkered_flag: Criação do rodape;
+
+:checkered_flag: Tentativa da criação da responsividade e compatibilidade com celulares.

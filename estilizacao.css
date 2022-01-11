@@ -411,8 +411,8 @@ header{
 }
 
 .sessao-contato{
-        margin-top: 20px;
-        width: 100%;
+        margin-top: 10px;
+        width: 100vw;
         height: 100vh;
         background-color: #4e4c4c;
         display: flex;
@@ -638,10 +638,46 @@ header{
 
 @media screen and (max-width: 768px){
         
-        body{border: solid black 1px;
-        }
+        body{border: solid rgb(248, 20, 20) 2px;width: 893px;}
         
         section .section-conhecimentos img{display: none; position: relative;}
+        /*============Área do Banner============*/
+        .img-wrapper{width: 100vh;height: 100vh;overflow: hidden;background-color: rgba(0, 0, 0, 0.9);}
+        .banner a{ padding-left: 35px;font-size: 3rem;}
+        .banner p{width: 50%; font-size: 2rem;}
+        .banner button{font-size: 1.5rem;}
+        /*==========Área do Conhecimento===========*/
+        .section-conhecimentos{
+                padding: 2%;
+                border: rgb(245, 37, 37) 1px solid;
+                width: 893px;
+                height: 100vh;}
+
+        .conhecimento-img-wrapper img{ 
+               position: relative;width: 300px; align-items: center; justify-content: center;text-align: center;
+               left: 250px;
+        }
+
+        .section-conhecimentos p{font-size: 1.5rem;}
+
+        
+        .section-conhecimentos h3{font-size: 1.5rem;}
+        
+        .section-conhecimentos a{font-size: 1rem;}
+        
+        .conhecimentos i{ padding-top: 10% ;}
+        
+        
+        .conhecimento-text{font-size: 15px; display: block;}
+        
+        .conhecimento i{font-size: 23px;}
+        
+        .conhecimentos{border: 1px solid black;display: inline;}
+        
+
+        div .conhecimento-text{width: 800px;display: block;}
+
+        /*===========Área dos Projetos================*/
 
         div .projetos{width: 100%;padding-left: 25%;position: center;align-items: center;justify-content: center;display: block;}
 
@@ -649,68 +685,30 @@ header{
 
         .card-img-wrapper{width: auto; height: 350px;}
 
-        .section-conhecimentos{
-                margin: 2%;
-                padding: 2%;
-                border: black 1px solid;
-                width: 80vw;}
-
-        .section-conhecimentos h3{font-size: 1.5rem;}
-
-        .section-conhecimentos a{font-size: 1rem;}
-
-        .conhecimentos i{ padding-top: 10% ;}
-
-        .banner a{ font-size: 2.5rem;}
-
-        .img-wrapper{width: 100vh;height: 60vh;overflow: hidden;background-color: rgba(0, 0, 0, 0.9);}
-
-        .conhecimento-text{font-size: 15px; display: block;}
-
-        .conhecimento i{font-size: 23px;}
-
-        .conhecimentos{display: grid;grid-template-columns: repeat(-1, 1fr);grid-template-rows: repeat(6, 7rem);row-gap: .5rem;}
-
-        .conhecimento:nth-child(1){grid-column: 2 / 9;grid-row: 1 / 6;}
-
-        .conhecimento:nth-child(2){grid-column: 2 / 9;grid-row: 3 / 6;}
-
-        .conhecimento:nth-child(3){grid-column: 2 / 9;grid-row: 5 / 6;}
-
-        .conhecimento:nth-child(4){grid-column: 9 / 16;grid-row:  1 / 6;}
-
-        .conhecimento:nth-child(5){grid-column: 9 / 16;grid-row: 3 / 6;}
-
-        .conhecimento:nth-child(6){grid-column: 9 / 16;grid-row: 5 / 6;}
-
-        div.conhecimento-img-wrapper img{opacity: 0.0;}
 
         .sessao-header h1{padding-top: -500px;float: top; display: inline;}
 
-        .sessao-header{
-                display: block;
-                align-items: center;
-                justify-content: center;
+        .sessao-header{display: block;align-items: center;justify-content: center;}
+
+        .line{width: 50%;height: .1rem;background-color: #fff;box-shadow: 0.1rem 0.1rem 1px #000;transition: transform 1s;}
+
+
+        .sessao-contato label{width: 50vw;font-size: .9rem;}
+
+        .sessao-contato{width: 100vw;height: 100vh;}
+        
+       .sesao-contato div.contato-rigt ,div.contato-left{width: 40%; height: 80%; display: flex;}
+
+       .form div.input-group input.fiel{
+        width: 55%;
+        background-color: rgb(168, 70, 70);
+        padding: auto;
+        border: solid black 1px;}
+
+        div.contato-wrapper{
+                padding-top: 10px;
+                width: 90%;
+                height: 80%;
+                border: solid black 1px;
         }
-
-        .conhecimentos{
-                border: 1px solid black;
-                display: inline;
-                padding-right: 10px;
-                width: 50%;
-        }
-
-        .line{
-                width: 50%;
-                height: .1rem;
-                background-color: #fff;
-                box-shadow: 0.1rem 0.1rem 1px #000;
-                transition: transform 1s;
-        }
-        .section-conhecimentos img{
-                background-image: none;
-        }
-
-
-
 }
