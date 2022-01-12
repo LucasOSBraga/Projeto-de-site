@@ -34,4 +34,6 @@ Criação do menu sidebar;
 
 :checkered_flag: Criação do rodape;
 
+:checkered_flag: Criação do valor orçamentário;
+
 :checkered_flag: Tentativa da criação da responsividade e compatibilidade com celulares.

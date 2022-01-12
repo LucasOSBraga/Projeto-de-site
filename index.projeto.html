@@ -188,28 +188,33 @@
             <div class="orcamento-wrapper">
                 <h1>Faça um orçamento</h1>
                 <form>
-                    <label for="Quantidade">Quantidade de páginas</label>
-                    <input type="number">
+                    <label for="qtde">Qtde de páginas</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
                     <label for="js">Preciso de um script JS</label>
                     <input type="checkbox" name="js" id="js">
                     <label>Layout</label>
+
                     <div class="group-layout">
                         <div><!--Preciso de um layout-->
-                            <input type="radio" min="1" name="layout" id="layout-sim">
-                            <label for="latout-sim">Preciso de um layout</label>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
                         </div>
+
                         <div><!--Já tenho um layout-->
                             <input type="radio" name="layout" id="layout-nao">
-                            <label for="latout-nao">Já tenho um layout</label>
+                            <label for="layout-nao">Já tenho um layout</label>
                         </div>
                     </div><!--group-layout-->
 
-                    <label for="praso">Prazo</label>
-                    <input type="range" name="prazo" id="prazo">
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
                     <button class="btn btn-orcamento" type="submit">Enviar</button>
                 </form>
             </div><!--orcamento-wrapper-->
         </section><!--sessao-orcamento-->
+
+        <!----==========rodapé======-->
         <footer>
             <div class="footer content">
                 <p>Copyright &copy: 2022, ETECIA DS - Todos os direitos reservados</p>

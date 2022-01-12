@@ -9,6 +9,12 @@
         list-style: none;
         text-decoration: none;
  }
+
+ .container{
+         margin: 0 auto;
+         max-width: 1100px;
+         padding: 0 auto;
+ }
 /*classes auxiliares*/
  .btn{
         background: #6a3093; 
@@ -505,16 +511,25 @@ header{
 }
 
 .btn-submit{
-        width: 100%;
-        height: 2rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
         /*Pode ser usado para fazer o texto aparecer todo em maiúsculas ou minúsculas, ou com cada palavra em maiúscula.*/
         text-transform: uppercase;
+        width: 80%;
+        height: 2.5rem;
         margin-top: 1rem;
+        letter-spacing: 0.2rem;
+        cursor: pointer;
+        text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 }
 
+.preenchido{
+    pointer-events: none;
+}
+
+/*===========Oraçamento=========*/
 .sessao-orcamento{
-        width: 100wh;
+        width: 100%;
         height: 100vh;
         background-repeat: no-repeat;
         background-image: url('https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg');
@@ -584,6 +599,7 @@ header{
         grid-column: 2;
 }
 
+/*==============Rodapé==============*/
 .footer{
         width: 100%;
         height: 3rem;
@@ -637,78 +653,50 @@ header{
 
 
 @media screen and (max-width: 768px){
+        body{margin: 0;
+        padding: 0;}
         
-        body{border: solid rgb(248, 20, 20) 2px;width: 893px;}
-        
-        section .section-conhecimentos img{display: none; position: relative;}
-        /*============Área do Banner============*/
-        .img-wrapper{width: 100vh;height: 100vh;overflow: hidden;background-color: rgba(0, 0, 0, 0.9);}
-        .banner a{ padding-left: 35px;font-size: 3rem;}
-        .banner p{width: 50%; font-size: 2rem;}
-        .banner button{font-size: 1.5rem;}
-        /*==========Área do Conhecimento===========*/
-        .section-conhecimentos{
-                padding: 2%;
-                border: rgb(245, 37, 37) 1px solid;
-                width: 893px;
-                height: 100vh;}
-
-        .conhecimento-img-wrapper img{ 
-               position: relative;width: 300px; align-items: center; justify-content: center;text-align: center;
-               left: 250px;
+        .container{
+                margin: 0;
+                width:100%;
+                padding: 0;
         }
+        
+        /*============Área do Banner============*/
+        .img-wrapper{max-width:100%;height: 100vh;overflow: hidden;background-color: rgba(0, 0, 0, 0.9);
+        border: red 2px solid;}
 
-        .section-conhecimentos p{font-size: 1.5rem;}
+        .banner a{ padding-left: 35px;font-size: 3rem;}
 
+        .banner p{width: 50%; font-size: 2rem;}
+
+        .banner button{font-size: 1.5rem;}
+
+        /*==========Área do Conhecimento===========*/
+        .section-conhecimentos{border: solid rgb(0, 255, 213) 1px;}
+
+        section .section-conhecimentos img{display: none; position: relative; }
+
+        .conhecimento-img-wrapper img{position: relative;width: 300px; align-items: center; justify-content: center;text-align: center;left: 250px;}
+
+        .section-conhecimentos p{font-size: 1.5rem; max-width: 80%; padding-left: 2%;}
+
+        .section-conhecimentos h3{font-size: 1.5rem;padding-left: 2%}
         
-        .section-conhecimentos h3{font-size: 1.5rem;}
+        .section-conhecimentos a{font-size: 1rem;padding-left: 2%}
         
-        .section-conhecimentos a{font-size: 1rem;}
-        
+        .section-conhecimentos i{font-size: 1rem;padding-left: 2%}
+
         .conhecimentos i{ padding-top: 10% ;}
-        
         
         .conhecimento-text{font-size: 15px; display: block;}
         
         .conhecimento i{font-size: 23px;}
         
         .conhecimentos{border: 1px solid black;display: inline;}
-        
 
         div .conhecimento-text{width: 800px;display: block;}
 
         /*===========Área dos Projetos================*/
 
-        div .projetos{width: 100%;padding-left: 25%;position: center;align-items: center;justify-content: center;display: block;}
-
-        .sessao-contato, .contato-wrapper, .sessao-header{padding-top: 10%;width: auto; margin: auto;}
-
-        .card-img-wrapper{width: auto; height: 350px;}
-
-
-        .sessao-header h1{padding-top: -500px;float: top; display: inline;}
-
-        .sessao-header{display: block;align-items: center;justify-content: center;}
-
-        .line{width: 50%;height: .1rem;background-color: #fff;box-shadow: 0.1rem 0.1rem 1px #000;transition: transform 1s;}
-
-
-        .sessao-contato label{width: 50vw;font-size: .9rem;}
-
-        .sessao-contato{width: 100vw;height: 100vh;}
-        
-       .sesao-contato div.contato-rigt ,div.contato-left{width: 40%; height: 80%; display: flex;}
-
-       .form div.input-group input.fiel{
-        width: 55%;
-        background-color: rgb(168, 70, 70);
-        padding: auto;
-        border: solid black 1px;}
-
-        div.contato-wrapper{
-                padding-top: 10px;
-                width: 90%;
-                height: 80%;
-                border: solid black 1px;
-        }
 }
