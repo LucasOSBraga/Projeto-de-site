@@ -560,7 +560,7 @@ header{
         background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  
         background: linear-gradient(to left, #a044ff, #6a3093);
         padding: 0 3rem;
-        color: blue;
+        color: rgb(255, 255, 255);
         font-family:var(--font-primary);
         font-size: 3rem;
         font-weight: lighter;
